@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nice day </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    *{margin: 0;padding: 0; box-sizing: border-box;}
+    body{font-family: 'Noto Sans KR',sans-serif; /* 글꼴 고딕체 */
+         color: black;
+         line-height: 1.6; /* 줄간격 1.6배수 */
+}
+img{width: 100%; display: block; /*여백 높이 너비 적용*/}
+a{ text-decoration: none; color: #333;}
+header{
+       width: 100%;
+       background: rgba(255,255,255,0.8);
+}
+.logo {margin: 0;} /*너비 글자 세로배치 적용 */
+.logo img {
+           height: 36px; /*40 60 72px*/
+           width: auto;
+           display: block;
+}
+.header-inner{ display: flex;
+               justify-content: space-between; /*양끝으로 배치*/
+               align-items: center; /*세로 정렬*/
+               padding: 16px 8%;
+}
+nav a{margin-left: 32px; font-size: 14px; font-weight: bold;}
+main{
+     height: 100vh; /*화면 풀높이 100퍼센트*/
+     background: url(bg.jpg) no-repeat center/cover;
+}
+section{
+        padding: 120px 8%;
+}
+section h1{
+           text-align: center; margin-bottom: 24px;
+}
+section h2{text-align: center; margin-bottom: 16px;
+           border-bottom: 1px solid black;
+}
+.sec1{background-color: azure;}
+.ct1{ display: flex; gap: 40px;}
+.c1{ width: 50%; background-color: beige; padding: 20px;}
+.c1 img { border-radius: 20px;}
+        section {
+            padding: 120px 8%;
+
+        }
+
+        .sec1 {
+            background: url(dog.jpg) no-repeat center/cover;
+            height: 300px;
+        }
+
+        .ct1,
+        .ct2,
+        .foot {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .c1 {
+            width: 23%;
+            height: 100px;
+            background: yellowgreen;
+        }
+
+        .c2 {
+            width:48%;
+            height: 80px;
+            background: aqua;
+        }
+
+        .foot-item {
+            width: 18%;
+            background: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+     <header>
+        <div class="header-inner"> <!--큰박스-->
+        <div class="logo">
+            <a href="index.html"> <!--첫페이지 파일명-->
+                <img src="bg.jpg" alt="로고이미지">
+            </a>
+        </div>
+        <nav>
+            <a href="a">menuname</a> <a href="a">menuname</a>
+            <a href="a">menuname</a> <a href="a">menuname</a>
+        </nav>
+        </div>
+    </header>
+<main></main>
+    <section class="sec1">
+        <h1> Nice day </h1>
+    </section>
+    <section>
+        <div class="ct1">
+            <div class="c1">Item 1"</div>
+            <div class="c1">Item 2"</div>
+            <div class="c1">Item 3"</div>
+            <div class="c1">Item 4"</div>
+        </div>
+        <div class="ct2">
+            <div class="c2">Item 1"</div>
+            <div class="c2">Item 2"</div>
+            <div class="c2">Item 3"</div>
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="foot-item">
+                    <p> </p>>
+                </div>
+                <div class="foot-item">>Item 1"</div>
+                <div class="foot-item">Item 2"</div>
+                <div class="foot-item">>Item 1"</div>
+                <div class="foot-item">>Item 2"</div>
+            </div>
+        </footer>
+</body></html>

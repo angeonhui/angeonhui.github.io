@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header fixed</title>
+    <style>
+*{margin: 0;padding: 0; box-sizing: border-box;}
+body{ font-family: ; line-height: 1.6;}
+a{text-decoration: none; color: black;}
+img{width: 100%; display: block; /*박스에 풀, 여백 잘 적용*/}
+header{width: 100%;
+       background: rgba(255,255,255,0.8); /*투명도80퍼 적용*/
+       position: fixed;
+       top: 0px; left: 0px;
+}
+.logo {margin: 0;} /*너비 글자 세로배치 적용 */
+.logo img {
+           height: 36px; /*40 60 72px*/
+           width: auto;
+           display: block;
+}
+.header-inner{display: flex;
+              justify-content: space-between; /*양끝으로 로고, 내비 가로배치 */
+              align-items: center; /* 로고 내비 세로 정렬 */
+              padding: 16px 8%; /*안여백주기 상하 좌우*/
+}
+nav a{margin-left: 32px; /*메뉴사이 간격*/
+      font-size: 14px; font-weight: bold;
+}
+main{
+     height: 100vh; /*화면 풀높이 100퍼센트*/
+     background: url(bg.jpg) no-repeat center/cover;
+}
+section h1{
+           text-align: center; margin-bottom: 24px;
+}
+section h2{text-align: center; margin-bottom: 16px;
+           border-bottom: 1px solid black;
+}
+.sec1{background-color: azure;}
+.ct1{ display: flex; gap: 40px;}
+.c1{ width: 50%; background-color: beige; padding: 20px;}
+.c1 img { border-radius: 20px;}
+    </style>
+</head>
+<body>
+<header> <!--배경색 고정 fixed-->
+    <div class="header-inner"> <!--큰박스 flex-->
+        <div class="logo">
+            <a href="index.html"> <img src="bg.jpg" alt="logoimg"></a>
+            <!--로고클릭 첫페이지이동-->
+        </div>
+        <nav>
+            <a href="#">MENU</a><a href="#">MENU</a><a href="#">MENU</a>
+        </nav>
+    </div>
+</header>
+<main></main>
+<section class="sec1">
+<h1>Title</h1>
+<h2>section title</h2>
+<div class="ct1">
+    <div class="c1"><img src="photo.jpg"></div>
+    <div class="c1"><img src="photo.jpg"></div>
+</div>
+</section>
+</body>
+</html>
