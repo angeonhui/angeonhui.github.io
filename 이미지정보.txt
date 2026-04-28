@@ -1,0 +1,19 @@
+                   [ 템플 포트폴리오 작업 규격 ]
+
+img폴더 -
+
+       1. 메인이미지 : main.jpg (1900*1080)
+       2. about 이미지 : about.jpg (1400*788 or 1200*675)
+       3. 썸네일이미지 : box1.jpg~ box6.jpg (400*289)
+       4. 상세페이지이미지 :  p1.jpg ~ p6.jpg (1200*7000)
+
+
+index.html, style.css, modal.js 수정 ->
+
+      1. 메인이미지 : style.css - main 배경 url main.jpg
+
+      2. about 이미지 : <section> about <img>
+
+      3. 썸네일이미지 : <section> project1 <img> box1.jpg
+
+      4. 상세페이지이미지 :  modal.js - project1:  image : p1.jpg 
