@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 안건희 포트폴리오 </title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <main id="home">
+      <header>
+        <div class="head">
+          <div class="logo"><a href="#home">PORTFOLIO</a></div>
+          <nav>
+            <ul>
+              <li><a href="#home"> Home </a></li>
+              <li><a href="#about"> About </a></li>
+              <li><a href="#project1"> Portfolio I</a></li>
+              <li><a href="#project2"> Portfolio II</a></li>
+              <li><a href="#contact"> Contact </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="hero">
+        <h1>Welcome to my portfolio.</h1>
+        <h2>creative works</h2>
+      </div>
+    </main>
+
+    <section id="about">
+      <h2 class="title">About</h2>
+      <div><img src="img/about.jpg" /></div>
+    </section>
+
+   <!-- 프로젝트 섹션 -->
+  <section id="project1">
+    <h2 class="title">Design Edit</h2>
+    <div class="gallery">
+      <div class="box" onclick="openModal('project1')">
+        <img src="img/box1.jpg" alt="프로젝트 1" class="thumbnail">
+        <p> Design </p>
+      </div>
+      <div class="box" onclick="openModal('project2')">
+        <img src="img/box2.jpg" alt="프로젝트 2" class="thumbnail">
+        <p> Design </p>
+      </div>
+      <div class="box" onclick="openModal('project3')">
+       <img src="img/box3.jpg" alt="프로젝트 3" class="thumbnail">
+       <p> Design </p>
+      </div>
+      <div class="box" onclick="openModal('project4')">
+        <img src="img/box4.jpg" alt="프로젝트 4" class="thumbnail">
+         <p> Design </p>
+      </div>
+      <div class="box" onclick="openModal('project5')">
+        <img src="img/box5.jpg" alt="프로젝트 5" class="thumbnail">
+         <p> Design </p>
+      </div>
+     
+     </div>
+  </section>
+  
+  <!-- 프로젝트 섹션 2 -->
+  <section id="project2">
+    <div id="project2-1">
+      <h2> Website Newal Design </h2>
+      <h3> </h3>
+      <div class="web-project">
+        <div class="wp-left">
+          <img src="img/web1.jpg">
+          <p> <a href="digital.pdf" target="_blank" class="btn">  기획서 보기  </a>
+              <a href="https://angeonhui.github.io/tom/index.html" target="_blank" class="btn"> Web site View  </a>
+          </p>
+        </div>
+        <div class="wp-right">
+          <h3> Web page Publishing </h3>
+          <p> <b> Period </b>: 2026. 04. 01 </p>
+          <p> <b> Type :</b> html file </p>
+          <p> <b> Output :</b> photoshop, html, css </p>
+          <p> <b> OVERVIEW :</b></p>
+          <p> 탐 앤 탐 스 는 오랜 노하우로 국내외 커피 시장을 선도하며 스페셜 티 커피와 갓 구운 따뜻한 프 레 즐, 문화가 융합된 특별한 공간으로 지금 대한민국을 비롯해 전 세계에서 사랑받는 브랜드입니다.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="project2-2">
+      <h2> Shoppingmal Design Edit </h2>
+      <h3> </h3>
+      <div class="web-project">
+        <div class="wp-left">
+          <img src="img/web2.jpg">
+          <p> <a href="shop.pdf" target="_blank" class="btn">  기획서 보기  </a>
+              <a href="https://angeonhee.cafe24.com/"target="_blank" class="btn"> Shoppingmal View </a>
+          </p>
+        </div>
+        <div class="wp-right">
+          <h3>Cafe24 Shoppingmal Edit </h3>
+          <p> <b> Period </b>: 2026. 02. 02 </p>
+          <p> <b> Type :</b> web </p>
+          <p> <b> Output :</b> cafe24, photoshop </p>
+          <p> <b> OVERVIEW :</b></p>
+          <p>트렌디한 감성과 미니멀한 디자인으로 패션성과 기능성을 모두 강조하며, 가구중심의 명확한 레이아웃과 브랜드 아이덴티티를 효과적으로 전달하는 원목 가구 브랜드 사이트입니다.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- 연락처 섹션 -->
+    <footer id="contact">
+      <p>© 2026 My Portfolio | 이메일: angeonhui@naver.com</p>
+      <ul class="social-links">
+        <li><a href="#">Phone 010-3930-6953</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </footer>
+    
+    <!-- 모달 창 -->
+    <div id="modal" class="modal" onclick="closeModalOnOutside(event)">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+  </body>
+</html>
