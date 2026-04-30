@@ -8,22 +8,22 @@ const projects = {
   project2: {
     title: '리플릿 디자인입니다.',
    image: 'img/p2.jpg',
-    description: '책이 사람을 만들고 사람이 책을 만드는 주제의 리플릿디자인입니다'
+    description: '책이 사람을 만들고 사람이 책을 만든다는 주제의 리플릿디자인입니다'
   },
   project3: {
-    title: '로고 디자인입니다.'
+    title: '로고 디자인입니다.',
     image: 'img/p3.jpg',
-    description: '네이밍과 로고 디자인을 통합한 브랜딩 프로젝트입니다.'
+    description: '만빵제작소입니다.'
   },
   project4: {
-    title: '상세페이지 디자인입니다.'
+    title: '상세페이지 디자인입니다.',
     image: 'img/p4.jpg',
     description: 'DIY JUNGLE의 상세페이지입니다.'
   },
   project5: {
-    title: '상세페이지 디자인입니다'
+    title: '상세페이지 디자인입니다',
     image: 'img/p5.jpg',
-    description: '원목가구 브랜드의 상세페이지입니다.'
+    description: '원목가구 브랜드 상세페이지입니다.'
   },
 };
 
