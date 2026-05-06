@@ -1,0 +1,295 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #5a524a;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 2rem auto;
+}
+
+main {
+  height: 100%;
+  background: url(img/main.jpg) no-repeat center/cover; 
+  position: relative;
+}
+
+header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.2rem;
+  position: fixed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.head {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.head nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+.head nav ul li a {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.head nav ul li a:hover {
+  color:#4CAF50;
+}
+
+.hero {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+section {
+  min-height: 100vh; 
+  height: auto;       /* 자동으로 콘텐츠에 맞게 */
+  padding: 6rem 0;  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: 80px;
+}
+
+.title {
+  font-size: 28px;
+  color: #5a524a;
+  margin-bottom: 30px;
+}
+
+#about {
+  background-color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* 프로젝트 섹션 */
+.gallery {
+  max-width:1200px;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.box {
+  width: 30%; 
+  cursor: pointer;
+ }
+
+.box img {
+  width: 100%;
+  object-fit: cover;
+ }
+
+.box p{
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+.thumbnail:hover {
+  transform: scale(1.03);
+  box-shadow:0 0 10px gray;
+}
+
+/* 프로젝트2 웹포플 */
+#project2 {
+ padding-top: 2rem;
+}
+#project2 h2{text-align: center;}
+.web-project {
+  margin:100px auto;
+  width: 80%;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.wp-left {
+  width: 33%;
+  min-width: 350px;
+  text-align: center;
+}
+
+.wp-left a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border:1px solid gray;
+  color:#333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.wp-right {
+  border-radius: 0px;
+  min-width: 400px;
+  text-align: left;
+  width: 55%;
+  box-shadow: 0 0 2px lightblue;
+  padding: 4%;
+}
+
+.wp-left img {
+  width: 80%;
+  object-fit: cover;
+}
+
+#contact {
+  text-align: center;
+  padding: 8rem 0;
+  position: relative; /* 겹침 방지 */
+  z-index: 1;
+}
+
+#contact li {
+  list-style-type: none;
+  line-height: 2rem;
+}
+
+#contact li a {
+  text-decoration: none;
+  color: #1e272e;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+#contact li a:hover {
+  color:#4CAF50;
+  text-shadow: 0 0 3px rgb(229, 248, 193);
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  animation: fadeIn 0.3s;
+}
+
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 1200px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideIn 0.3s;
+}
+
+.close {
+  position: fixed;
+  top:30px;
+  right:14%;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+  color:black;
+  cursor: pointer;
+  transition: color 0.3s;
+  line-height: 1;
+  z-index: 10001;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 24px;
+}
+
+.modal-content p {
+  line-height: 1.8;
+  color: #666;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 
+
